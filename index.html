@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $("#clickable").click(function(){
+            $(".sidebar").toggleClass("be");
+        });
+
+        $("#logo").animate({'opacity': 1}, 1000);
+        $(".movie-container").animate({'opacity': 1}, 1000);
+        $(".sidebar").animate({'opacity': 1}, 600);
+    });
+    </script> 
+    <title>MATYESZFLIX</title>
+</head>
+
+<body>
+    <p id="logoP"><img src="https://fontmeme.com/permalink/220214/caa5685367758d0216e7067bad8dcff1.png" alt="netflix-font" id="logo"></p>
+    
+    <div id="content">
+        <div id="cards"></div>
+    </div>
+    <div class="sidebar">
+        <div id="top10">
+            <ol>
+                <li>One Piece</li>
+                <li>Attack On Titan</li>
+                <li>Naruto</li>
+                <li>Demon Slayer</li>
+                <li>Re:Zero</li>
+            </ol>
+            <h4>Based on: "Trust me bro"</h4>
+        </div>
+        <div id="clickable">
+            TOP 5 ANIME
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
